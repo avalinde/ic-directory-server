@@ -14,10 +14,12 @@ router.post("/register", register);
 
 router.get("/login", login);
 
-router.get("/login/error"),
-  (request, response, next) => {
-    return response.json({ message: "Login error" });
-  };
+router.get("login/error", (request, response, next) => {
+  response.status(400).json({
+    error: { message: "There was an error when logging in" },
+    statusCode: 400,
+  });
+});
 
 router.get("/login/local", localLogin);
 

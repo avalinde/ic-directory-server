@@ -8,7 +8,7 @@ const User = require("../models/userModel");
 passport.use(
   new LocalStrategy(async (username, password, done) => {
     try {
-      const user = await user.findOne({ username });
+      const user = await User.findOne({ username });
       if (!user) {
         return done(null, false, {
           message: "Incorrect username or password", //leaving intentionally vague

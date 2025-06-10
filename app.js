@@ -6,6 +6,7 @@ require("./config/authStrategy")
 
 const express = require("express");
 const app = express();
+const session = require("express-session");
 const PORT = process.env.PORT || 3000;
 
 //Middleware
@@ -54,7 +55,7 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session()); //creates session on calls that require passport authentication
 
-app.use("api/clinics", clinicRoutes);
+app.use("/api/clinics", clinicRoutes);
 app.use("/auth", authRoutes);
 
 app.use((error, request, result, next) => {
