@@ -57,7 +57,7 @@ router.get("/admin", checkAuthentication, (request, response, next) => {
                 console.log("Redirecting to webmaster route ")
                  return response.json("Authenticated via route").redirect("/auth-console");
             }
-            auth()
+            auth();
         }
         
     } catch (error) {
