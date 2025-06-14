@@ -7,7 +7,7 @@ const { request } = require("express");
 const register = async (request, response, next) => {
   const { firstName, lastName, username, password, googleId } = request.body;
   console.log(request.body);
-  //Error handling can be reactivated in the auth unit.
+ 
   if (error) {
     return next(error);
   } else if (!firstName || !username || !password) {

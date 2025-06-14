@@ -31,7 +31,7 @@ router.get("/login/google",
     passport.authenticate("google", { scope: ["profile", "email"]})
 );
 
-router.get("/auth/google/callback",
+router.get("/google/callback",
     passport.authenticate("google", {
         failureRedirect: "/login",
         successRedirect: "/dashboard",

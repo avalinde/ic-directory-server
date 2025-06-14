@@ -67,6 +67,10 @@ app.use((error, request, result, next) => {
             statuscode: authErrStatus,
         });
     }
+    else{
+        console.log("Error handling middleware passed");
+    }
+    
 
     return result.status(serverErrStatus).json({
         error: {message: error.message ||"Internal Server error."},
