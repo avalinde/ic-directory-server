@@ -10,7 +10,7 @@ const {
     getClinic,
     createClinic,
     updateClinic,
-    deleteClinic
+    deleteClinic,
 } = require("../controllers/clinicController");
 
 router.get("/", getAllClinics);

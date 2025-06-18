@@ -98,7 +98,8 @@ const createClinic = async (request, response, next) => {
       surgicalTeam,
     };
 
-    await newClinic.save;
+    const result = await Clinic.insertOne(newClinic);
+    console.log("Document inserted with _id:", result.insertedId);
 
     response.status(201).json({
       success: { message: "This route created a new clinic " },
