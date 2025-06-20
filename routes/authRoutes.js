@@ -4,10 +4,11 @@ const router = express.Router();
 
 //auth functions
 const {
+  localLogin,
+  logoutUser,
   register,
   login,
-  logout,
-  localLogin,
+  
 } = require("../controllers/authController");
 
 router.post("/register", register);
@@ -23,7 +24,7 @@ router.get("login/error", (request, response, next) => {
 
 router.get("/login/local", localLogin);
 
-router.get("/logout", logout);
+router.get("/logout", logoutUser);
 
 //google auth
 
