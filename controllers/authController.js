@@ -23,7 +23,7 @@ const localLogin = async (request, response, next) => {
         return next(error);
       }
 
-    const userCopy = { ...req.user._doc };
+    const userCopy = { ...request.user._doc };
     userCopy.password = undefined;
 
 
