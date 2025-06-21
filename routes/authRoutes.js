@@ -24,7 +24,7 @@ router.get("login/error", (request, response, next) => {
 
 router.post("/login/local", localLogin);
 
-router.get("/logout", logoutUser);
+router.post("/logout", logoutUser);
 
 //google auth
 
