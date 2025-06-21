@@ -22,7 +22,7 @@ router.get("login/error", (request, response, next) => {
   });
 });
 
-router.get("/login/local", localLogin);
+router.post("/login/local", localLogin);
 
 router.get("/logout", logoutUser);
 
