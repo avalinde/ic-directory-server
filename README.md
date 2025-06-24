@@ -5,7 +5,7 @@ This project is a proof-of-concept that creates a directory of transgender healt
 Link to project: https://ic-directory.netlify.app/
 Link to frontend repository: https://github.com/avalinde/codesquad-personal-project-client
 
-##Tech used: 
+## Tech used: 
 
 JavaScript, Express, MongoDB
 
