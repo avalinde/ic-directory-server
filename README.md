@@ -3,6 +3,7 @@
 This project is a proof-of-concept that creates a directory of transgender health clinics in the Boston area. The backend focuses on two schemas: Site Users and Clinics.
 
 Link to project: https://ic-directory.netlify.app/
+
 Link to frontend repository: https://github.com/avalinde/codesquad-personal-project-client
 
 ## Tech used: 
